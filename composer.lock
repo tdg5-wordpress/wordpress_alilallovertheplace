@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "47f07c267ef03897042cbc6f5577d820",
+    "hash": "139e18ed8a503d0767295cc3ac94c89e",
     "packages": [
         {
             "name": "composer/installers",
@@ -142,6 +142,40 @@
             "description": "A composer installer for libraries that live in an application webroot.",
             "homepage": "http://fancyguy.github.com/webroot-installer/",
             "time": "2013-01-29 22:51:45"
+        },
+        {
+            "name": "tdg5-wordpress/theme_alilallovertheplace",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tdg5-wordpress/theme_alilallovertheplace",
+                "reference": "d8f2a6cf6dc51dd6d337bbab3d9313fda7c357ab"
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3"
+            },
+            "type": "wordpress-theme",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Danny Guinther",
+                    "email": "dannyguinther@gmail.com",
+                    "homepage": "http://tdg5.com/"
+                }
+            ],
+            "description": "Wordpress theme for alilallovertheplace.com",
+            "homepage": "https://github.com/tdg5/lil_themer",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/tdg5/lil_themer/issues",
+                "source": "https://github.com/tdg5/lil_themer"
+            },
+            "time": "2015-01-22 00:55:04"
         },
         {
             "name": "wordpress",
@@ -316,26 +350,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-security-scan/"
-        },
-        {
-            "name": "wpackagist-theme/twentyfifteen",
-            "version": "1.0",
-            "source": {
-                "type": "svn",
-                "url": "http://themes.svn.wordpress.org/twentyfifteen/",
-                "reference": "1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://wordpress.org/themes/download/twentyfifteen.1.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "http://wordpress.org/themes/twentyfifteen/"
         }
     ],
     "packages-dev": [],
@@ -345,6 +359,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
+        "ext-gd": "*",
         "php": ">=5.3.0"
     },
     "platform-dev": []
