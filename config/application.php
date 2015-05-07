@@ -124,3 +124,8 @@ define("WP_CONTENT_DIR", dirname(__DIR__) . "/wp-content");
 **/
 define("WP_CACHE", true);
 define("WPCACHEHOME", WP_CONTENT_DIR . "/plugins/wp-super-cache/");
+
+/**
+  * Disable automatic updates
+**/
+define( 'AUTOMATIC_UPDATER_DISABLED', true );
